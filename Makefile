@@ -2,7 +2,7 @@ TARGET	:=	oil
 
 all: $(TARGET)
 
-install:
+install: $(TARGET)
 	install ./$(TARGET) /usr/local/bin/
 
 $(TARGET): main.cpp
